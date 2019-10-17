@@ -173,11 +173,42 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910170711014_DatabaseCreated.cs" />
+    <Compile Include="Migrations\201910170711014_DatabaseCreated.Designer.cs">
+      <DependentUpon>201910170711014_DatabaseCreated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910170818546_CreatedTableforAccountHolderDetails.cs" />
+    <Compile Include="Migrations\201910170818546_CreatedTableforAccountHolderDetails.Designer.cs">
+      <DependentUpon>201910170818546_CreatedTableforAccountHolderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910170820427_CreatedTableforAccountDetails.cs" />
+    <Compile Include="Migrations\201910170820427_CreatedTableforAccountDetails.Designer.cs">
+      <DependentUpon>201910170820427_CreatedTableforAccountDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910170924145_DroppindColumnsAndAddingColumnsinAccountDetails.cs" />
+    <Compile Include="Migrations\201910170924145_DroppindColumnsAndAddingColumnsinAccountDetails.Designer.cs">
+      <DependentUpon>201910170924145_DroppindColumnsAndAddingColumnsinAccountDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910170926173_DroppindColumnsAndAddingColumnsinAccountDetails1.cs" />
+    <Compile Include="Migrations\201910170926173_DroppindColumnsAndAddingColumnsinAccountDetails1.Designer.cs">
+      <DependentUpon>201910170926173_DroppindColumnsAndAddingColumnsinAccountDetails1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910170928001_CreatedTransactionTable.cs" />
+    <Compile Include="Migrations\201910170934513_DropingAlltables.cs" />
+    <Compile Include="Migrations\201910170934513_DropingAlltables.Designer.cs">
+      <DependentUpon>201910170934513_DropingAlltables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910170938046_CreatedAccountHolderDetailsandAccountDetailsandTransactionTables.cs" />
+    <Compile Include="Migrations\201910170938046_CreatedAccountHolderDetailsandAccountDetailsandTransactionTables.Designer.cs">
+      <DependentUpon>201910170938046_CreatedAccountHolderDetailsandAccountDetailsandTransactionTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountDetails.cs" />
     <Compile Include="Models\AccountHolderDetails.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Transactions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -253,6 +284,29 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201910170711014_DatabaseCreated.resx">
+      <DependentUpon>201910170711014_DatabaseCreated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910170818546_CreatedTableforAccountHolderDetails.resx">
+      <DependentUpon>201910170818546_CreatedTableforAccountHolderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910170820427_CreatedTableforAccountDetails.resx">
+      <DependentUpon>201910170820427_CreatedTableforAccountDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910170924145_DroppindColumnsAndAddingColumnsinAccountDetails.resx">
+      <DependentUpon>201910170924145_DroppindColumnsAndAddingColumnsinAccountDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910170926173_DroppindColumnsAndAddingColumnsinAccountDetails1.resx">
+      <DependentUpon>201910170926173_DroppindColumnsAndAddingColumnsinAccountDetails1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910170934513_DropingAlltables.resx">
+      <DependentUpon>201910170934513_DropingAlltables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910170938046_CreatedAccountHolderDetailsandAccountDetailsandTransactionTables.resx">
+      <DependentUpon>201910170938046_CreatedAccountHolderDetailsandAccountDetailsandTransactionTables.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
