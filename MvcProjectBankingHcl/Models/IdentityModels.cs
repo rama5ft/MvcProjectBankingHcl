@@ -21,7 +21,7 @@ namespace MvcProjectBankingHcl.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("BankingProject", throwIfV1Schema: false)
         {
         }
 
@@ -29,5 +29,9 @@ namespace MvcProjectBankingHcl.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<AccountHolderDetails> accountholderdetails { get; set; }//dbset represents table
+        public DbSet<AccountDetails> accountdetails { get; set; }
+        public DbSet<Transactions> transactions { get; set; }
     }
 }
