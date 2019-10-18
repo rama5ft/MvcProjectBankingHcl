@@ -15,5 +15,12 @@ namespace MvcProjectBankingHcl.Models
         public string IFSCCode{ get; set; }
         public string BankBranch { get; set; }
         public int AccountType { get; set; }
+
+
+
+        //Referencing table from accountHolder
+           public AccountHolderDetails AccountHolderDetails { get; set; }
+        //referencing column
+        public int?AccountHolderDetailsid { get; set; }
     }
 }

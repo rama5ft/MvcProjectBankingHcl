@@ -13,5 +13,10 @@ namespace MvcProjectBankingHcl.Models
         public DateTime TransactionTimeAndDate { get; set; }
         public Double Amount { get; set; }
         public string TransactionType { get; set; }
+
+        //refernce a accountdetails
+        public AccountDetails AccountDetails { get; set; }
+         // referncing a column
+         public int? AccountDetailsId { get; set; }
     }
 }

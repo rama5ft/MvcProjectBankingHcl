@@ -168,6 +168,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AccountHoldersDetailsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -201,6 +202,14 @@
     <Compile Include="Migrations\201910170938046_CreatedAccountHolderDetailsandAccountDetailsandTransactionTables.cs" />
     <Compile Include="Migrations\201910170938046_CreatedAccountHolderDetailsandAccountDetailsandTransactionTables.Designer.cs">
       <DependentUpon>201910170938046_CreatedAccountHolderDetailsandAccountDetailsandTransactionTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910180334252_addedreferncetabletoaccountdetails.cs" />
+    <Compile Include="Migrations\201910180334252_addedreferncetabletoaccountdetails.Designer.cs">
+      <DependentUpon>201910180334252_addedreferncetabletoaccountdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910180340456_addedreferncetabletoTransactionsTable.cs" />
+    <Compile Include="Migrations\201910180340456_addedreferncetabletoTransactionsTable.Designer.cs">
+      <DependentUpon>201910180340456_addedreferncetabletoTransactionsTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountDetails.cs" />
@@ -271,6 +280,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\AccountHolderDetails\" />
+    <Folder Include="Views\AccountHoldersDetails\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -306,6 +317,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910170938046_CreatedAccountHolderDetailsandAccountDetailsandTransactionTables.resx">
       <DependentUpon>201910170938046_CreatedAccountHolderDetailsandAccountDetailsandTransactionTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910180334252_addedreferncetabletoaccountdetails.resx">
+      <DependentUpon>201910180334252_addedreferncetabletoaccountdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910180340456_addedreferncetabletoTransactionsTable.resx">
+      <DependentUpon>201910180340456_addedreferncetabletoTransactionsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
