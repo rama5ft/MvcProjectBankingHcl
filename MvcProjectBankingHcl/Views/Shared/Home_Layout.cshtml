@@ -1,41 +1,59 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+    ViewBag.Title = "Home_Layout";
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title -WELCOME TO MVC BANK</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    <style>
+        body{
+            top:0;
+            left:0;
+        }
+        .container{
+            width:1000px;height:2000px;border:1px solid;
+        }
+        .logo{
+            width:1000px;height:400px;border:1px solid;
+        }
+        .register{
+            width:500px;height:1000px;background-color:rebeccapurple;float:left;
+        }
+        .login {
+            width: 500px;
+            height: 1000px;
+            background-color: violet;
+            float: right;
+        }
+        .footer {
+            width: 1000px;
+            height: 600px;
+            background-color: deeppink;
+            float:left;
+        }
+    </style>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @*@Html.ActionLink("MVC", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("CreateANewAccount","CreateANewAccount","AccountsDetails",null,new {@class="nav-Link"})</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        
         @RenderBody()
-        <hr />
-        <footer>
+    <div class="container">
+        <div class="logo">
+            <h2>
+                Welcome To MVC Bank :):)
+            </h2>
+        </div>
+        <div class="register">
+            <h3>Register</h3>
+        </div>
+        <div class="login">
+            <h3>Log In</h3>
+        </div>
+        <div class="footer">
             <div class="form-group">
                 <h2>Contact Us</h2>
                 <text>CustomerCare Number</text>
@@ -63,7 +81,7 @@
                 </p>
             </div>
             <p>&copy; @DateTime.Now.Year -MVC Bank </p>
-        </footer>
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
@@ -71,3 +89,4 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+

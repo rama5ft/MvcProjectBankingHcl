@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
+
 namespace MvcProjectBankingHcl.Models
 {
     public class AccountDetails
@@ -19,8 +20,8 @@ namespace MvcProjectBankingHcl.Models
 
 
         //Referencing table from accountHolder
-           public AccountHolderDetails AccountHolderDetails { get; set; }
+        public AccountHolderDetails AccountHolderDetails { get; set; }
         //referencing column
-        public int?AccountHolderDetailsid { get; set; }
+        public int? AccountHolderDetailsId { get; set; }
     }
 }

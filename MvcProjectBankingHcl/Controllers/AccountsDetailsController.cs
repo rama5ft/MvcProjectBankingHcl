@@ -3,32 +3,50 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MvcProjectBankingHcl.Models;
 
 namespace MvcProjectBankingHcl.Controllers
 {
-    public class AccountHoldersDetailsController : Controller
+    public class AccountsDetailsController : Controller
     {
-        // GET: AccountHoldersDetails
+        private ApplicationDbContext dbContext = null;
+        public AccountsDetailsController()
+        {
+            dbContext = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+           if(disposing)
+            {
+                dbContext.Dispose();
+            }
+        }
+
+        // GET: AccountsDetails
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: AccountHoldersDetails/Details/5
+        // GET: AccountsDetails/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
-
-        // GET: AccountHoldersDetails/Create
-        public ActionResult Create()
+       // [Route("AccountsDetails/CreateANewAccount/{AccountHolderDetailsId}")]
+        // GET: AccountsDetails/Create
+        public ActionResult CreateANewAccount()
         {
-            return View();
+            //AccountDetails accountDetails = new AccountDetails();
+            //return View(accountDetails);
+           // var account = dbContext.accountdetails.Include(a => a.accountholderdetails).ToList();
+            return View(account);
         }
 
-        // POST: AccountHoldersDetails/Create
+        // POST: AccountsDetails/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult CreateANewAccount(FormCollection collection)
         {
             try
             {
@@ -42,13 +60,13 @@ namespace MvcProjectBankingHcl.Controllers
             }
         }
 
-        // GET: AccountHoldersDetails/Edit/5
+        // GET: AccountsDetails/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: AccountHoldersDetails/Edit/5
+        // POST: AccountsDetails/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -64,13 +82,13 @@ namespace MvcProjectBankingHcl.Controllers
             }
         }
 
-        // GET: AccountHoldersDetails/Delete/5
+        // GET: AccountsDetails/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: AccountHoldersDetails/Delete/5
+        // POST: AccountsDetails/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

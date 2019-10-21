@@ -1,4 +1,4 @@
-﻿using System;
+﻿                                                                                                       using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -9,7 +9,7 @@ namespace MvcProjectBankingHcl.Models
     public class AccountHolderDetails
     {
         [Key]
-        public int AccountHolderDetailsid { get; set; }
+        public int AccountHolderDetailsId { get; set; }
         //public string FirstName { get; set; }
         //public string LastName { get; set; }
 
@@ -20,7 +20,7 @@ namespace MvcProjectBankingHcl.Models
         public string  MobileNumber { get; set; }
         public string AlternateMobileNumber { get; set; }
         public string EmailId { get; set; }
-        public int MyProperty { get; set; }
+      //  public int MyProperty { get; set; }
         public List<string> Nationality { get; set; }
         public string Address { get; set; }
         public byte[] IdProofs { get; set; }

@@ -168,7 +168,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AccountHoldersDetailsController.cs" />
+    <Compile Include="Controllers\AccountsDetailsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -210,6 +210,26 @@
     <Compile Include="Migrations\201910180340456_addedreferncetabletoTransactionsTable.cs" />
     <Compile Include="Migrations\201910180340456_addedreferncetabletoTransactionsTable.Designer.cs">
       <DependentUpon>201910180340456_addedreferncetabletoTransactionsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910180409233_droppingAllTablesfromdatabase.cs" />
+    <Compile Include="Migrations\201910180409233_droppingAllTablesfromdatabase.Designer.cs">
+      <DependentUpon>201910180409233_droppingAllTablesfromdatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910180410493_AddingAllTables.cs" />
+    <Compile Include="Migrations\201910180410493_AddingAllTables.Designer.cs">
+      <DependentUpon>201910180410493_AddingAllTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910180413176_AddedReferncetables.cs" />
+    <Compile Include="Migrations\201910180413176_AddedReferncetables.Designer.cs">
+      <DependentUpon>201910180413176_AddedReferncetables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910180646362_DroppeedreftablesReferncetables.cs" />
+    <Compile Include="Migrations\201910180646362_DroppeedreftablesReferncetables.Designer.cs">
+      <DependentUpon>201910180646362_DroppeedreftablesReferncetables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910180647109_AddedReferncetables1.cs" />
+    <Compile Include="Migrations\201910180647109_AddedReferncetables1.Designer.cs">
+      <DependentUpon>201910180647109_AddedReferncetables1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountDetails.cs" />
@@ -278,11 +298,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\Home_Layout.cshtml" />
+    <Content Include="Views\AccountsDetails\CreateANewAccount.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\AccountHolderDetails\" />
-    <Folder Include="Views\AccountHoldersDetails\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -324,6 +345,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910180340456_addedreferncetabletoTransactionsTable.resx">
       <DependentUpon>201910180340456_addedreferncetabletoTransactionsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910180409233_droppingAllTablesfromdatabase.resx">
+      <DependentUpon>201910180409233_droppingAllTablesfromdatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910180410493_AddingAllTables.resx">
+      <DependentUpon>201910180410493_AddingAllTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910180413176_AddedReferncetables.resx">
+      <DependentUpon>201910180413176_AddedReferncetables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910180646362_DroppeedreftablesReferncetables.resx">
+      <DependentUpon>201910180646362_DroppeedreftablesReferncetables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910180647109_AddedReferncetables1.resx">
+      <DependentUpon>201910180647109_AddedReferncetables1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

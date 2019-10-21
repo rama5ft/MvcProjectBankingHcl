@@ -16,7 +16,7 @@ namespace MvcProjectBankingHcl.Models
 
         //refernce a accountdetails
         public AccountDetails AccountDetails { get; set; }
-         // referncing a column
-         public int? AccountDetailsId { get; set; }
+        // referncing a column
+        public int? AccountDetailsId { get; set; }
     }
 }
